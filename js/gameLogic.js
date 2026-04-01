@@ -14,6 +14,7 @@ let stocks = [
   { name: "BA", price: 10, volatility: 0.40, owned: {}, totalSpent: {}, desc: "Very volatile sports brand.", history: [10] },
   { name: "SEED", price: 10, volatility: 0.25, owned: {}, totalSpent: {}, desc: "Agriculture, event-driven.", history: [10] },
   { name: "EXTRA FRESH", price: 10, volatility: 0.20, owned: {}, totalSpent: {}, desc: "Food, steady growth.", history: [10] }
+  { name: "CodeForU", price: 10, volatility: 0.20, owned: {}, totalSpent: {}, desc: "Tech, medium risk.", history: [10] }
 ];
 
 let playerColors = ["#ff4c4c","#4caf50","#2196f3","#ff9800"];
@@ -142,7 +143,7 @@ function applyDividends() {
       else if(owned>=500) rate=0.075;
       else if(owned>=100) rate=0.05;
       else if(owned>=50) rate=0.025;
-      else if(owned>10) rate=0.005;
+      else if(owned>10) rate=0.01;
 
       p.money += value*rate;
     });
