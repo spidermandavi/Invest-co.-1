@@ -13,8 +13,26 @@ let stocks = [
   { name: "GRAY-BOX", price: 10, volatility: 0.10, owned: {}, totalSpent: {}, desc: "Safe insurance.", history: [10] },
   { name: "BA", price: 10, volatility: 0.40, owned: {}, totalSpent: {}, desc: "Very volatile sports brand.", history: [10] },
   { name: "SEED", price: 10, volatility: 0.25, owned: {}, totalSpent: {}, desc: "Agriculture, event-driven.", history: [10] },
-  { name: "EXTRA FRESH", price: 10, volatility: 0.20, owned: {}, totalSpent: {}, desc: "Food, steady growth.", history: [10] }
-  { name: "CodeForU", price: 10, volatility: 0.20, owned: {}, totalSpent: {}, desc: "Tech, medium risk.", history: [10] }
+  { name: "EXTRA FRESH", price: 10, volatility: 0.20, owned: {}, totalSpent: {}, desc: "Food, steady growth.", history: [10] },
+  { name: "CodeForU", price: 10, volatility: 0.20, owned: {}, totalSpent: {}, desc: "Tech, medium risk.", history: [10] },
+  { name: "KEPL3", price: 8.21, volatility: 0.20, owned: {}, totalSpent: {}, desc: "Machinery, medium risk.", history: [10] },
+  { name: "KLBN4", price: 3.94, volatility: 0.10, owned: {}, totalSpent: {}, desc: "Paper, low risk.", history: [10] },
+  { name: "ALUP4", price: 10.99, volatility: 0.12, owned: {}, totalSpent: {}, desc: "Energy, low risk.", history: [10] },
+  { name: "SAPR4", price: 8.51, volatility: 0.15, owned: {}, totalSpent: {}, desc: "Water, low medium risk", history: [10] },
+  { name: "TASA4", price: 4.88, volatility: 0.35, owned: {}, totalSpent: {}, desc: "Guns, high volatility", history: [10] },
+  { name: "POMO4", price: 6.20, volatility: 0.15, owned: {}, totalSpent: {}, desc: "Buses, low medium risk.", history: [10] },
+  { name: "GRND3", price: 4.74, volatility: 0.10, owned: {}, totalSpent: {}, desc: "Shoes, low risk.", history: [10] },
+  { name: "ROMI3", price: 7.15, volatility: 0.08, owned: {}, totalSpent: {}, desc: "Machinery, low risk", history: [10] },
+  { name: "SOJA3", price: 7.13, volatility: 0.40, owned: {}, totalSpent: {}, desc: "Seeds, high volatility.", history: [10] },
+  { name: "FIQE3", price: 7.01, volatility: 0.25, owned: {}, totalSpent: {}, desc: "Internet, medium risk.", history: [10] },
+  { name: "BBSE3", price: 34.81, volatility: 0.15, owned: {}, totalSpent: {}, desc: "Insurance, low medium risk.", history: [10] },
+  { name: "CXSE3", price: 18.35, volatility: 0.15, owned: {}, totalSpent: {}, desc: "Insurance, low medium risk.", history: [10] },
+  { name: "BRBI11", price: 19.50, volatility: 0.28, owned: {}, totalSpent: {}, desc: "Investment Bank, medium risk.", history: [10] },
+  { name: "BMGB4", price: 5, volatility: 0.17, owned: {}, totalSpent: {}, desc: "Bank, low medium risk.", history: [10] },
+  { name: "CMIN3", price: 4.95, volatility: 0.30, owned: {}, totalSpent: {}, desc: "Mining, high medium risk.", history: [10] },
+  { name: "IFCM3", price: 1, volatility: 0.35, owned: {}, totalSpent: {}, desc: "E-Commerce, low high risk.", history: [10] },
+  { name: "PETR3", price: 53.91, volatility: 0.50, owned: {}, totalSpent: {}, desc: "Petrolium, ultra high risk.", history: [10] },
+  { name: "PRIO3", price: 66.21, volatility: 0.50, owned: {}, totalSpent: {}, desc: "Petrolium, ultra high risk.", history: [10] }
 ];
 
 let playerColors = ["#ff4c4c","#4caf50","#2196f3","#ff9800"];
