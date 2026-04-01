@@ -1,0 +1,50 @@
+/* ===== BASE ===== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #eaeaea;
+  background: linear-gradient(135deg, #0d1b2a, #1b263b); 
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ===== TITLE ===== */
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+/* ===== BUTTONS ===== */
+button {
+  margin: 3px;
+  padding: 8px 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #2c2f3a, #3a3f4f);
+  color: #eaeaea;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px) scale(1.05);
+  background: linear-gradient(135deg, #3a3f4f, #4a5165);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+/* ===== COLORS ===== */
+.green { color: #4caf50; font-weight: bold; }
+.red { color: #f44336; font-weight: bold; }
+.neutral { color: #ccc; }
+
+/* ===== VISIBILITY ===== */
+.hidden {
+  display: none !important;
+}
