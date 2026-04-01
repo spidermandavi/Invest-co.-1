@@ -1,0 +1,109 @@
+/* ===== INFO BAR ===== */
+#infoBar {
+  margin-top: 15px;
+  font-size: 1.3em;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.4s ease;
+}
+
+.infoContainer {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.playerTurn {
+  box-shadow: 0 0 20px rgba(255,255,255,0.6);
+}
+
+/* ===== BUTTONS CONTAINER ===== */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+button.danger {
+  background: linear-gradient(135deg, #a83232, #e74c3c);
+}
+
+button.danger:hover {
+  background: linear-gradient(135deg, #e74c3c, #f55b5b);
+}
+
+/* ===== BUY/SELL TOGGLE ===== */
+#buySellToggle {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+#buySellToggle button {
+  flex: 1;
+  padding: 10px 0;
+  font-weight: bold;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+#buySellToggle button.active {
+  color: #fff;
+  box-shadow: 0 0 15px rgba(255,255,255,0.6);
+}
+
+#buySellToggle button.active:first-child {
+  background: linear-gradient(135deg, #4caf50, #81c784);
+  border-color: #4caf50;
+}
+
+#buySellToggle button.active:last-child {
+  background: linear-gradient(135deg, #f44336, #e57373);
+  border-color: #f44336;
+}
+
+#buySellToggle button.inactive {
+  background: linear-gradient(135deg, #2c2f3a, #3a3f4f);
+  color: #aaa;
+}
+
+#buySellToggle button.inactive:hover {
+  transform: translateY(-2px) scale(1.05);
+  background: linear-gradient(135deg, #3a3f4f, #4a5165);
+  color: #eaeaea;
+}
+
+#buySellToggle button:hover {
+  box-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+th {
+  background: rgba(255,255,255,0.08);
+  font-weight: bold;
+}
+
+th, td {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 12px;
+  text-align: center;
+}
+
+tr:hover {
+  background: rgba(255,255,255,0.05);
+  transform: scale(1.01);
+  transition: all 0.2s;
+}
