@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stock Game</title>
+
+  <!-- ===== STYLESHEETS ===== -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/ui-popup.css">
+  <link rel="stylesheet" href="css/ui-podium.css">
+  <link rel="stylesheet" href="css/ui-trade.css">
+</head>
+<body>
+
+  <!-- ===== SETUP ===== -->
+  <div id="setup">
+    <h1>Stock Game Setup</h1>
+    <label>Players:
+      <select id="playerCount">
+        <option value="1">1</option>
+        <option value="2" selected>2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+    </label>
+
+    <div id="playerNames">
+      <input type="text" id="playerName0" placeholder="Player 1">
+      <input type="text" id="playerName1" placeholder="Player 2">
+      <input type="text" id="playerName2" placeholder="Player 3">
+      <input type="text" id="playerName3" placeholder="Player 4">
+    </div>
+
+    <label>Game Mode:
+      <select id="gameMode">
+        <option value="turns" selected>Turns</option>
+        <option value="money">Money</option>
+      </select>
+    </label>
+    <input type="number" id="modeValue" value="20" min="1">
+    <button onclick="startGame()">Start Game</button>
+  </div>
+
+  <!-- ===== GAME ===== -->
+  <div id="game" class="hidden">
+    <div id="infoBar" class="infoBar"></div>
+    <div id="buySellToggle" class="toggleContainer"></div>
+
+    <table id="stockTable">
+      <thead>
+        <tr>
+          <th>Stock</th>
+          <th>Price</th>
+          <th>Change</th>
+          <th>Owned</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <button class="rightBtn" onclick="endTurn()">End Turn</button>
+    <button class="rightBtn danger" onclick="confirmEndGame()">End Game</button>
+  </div>
+
+  <!-- ===== PODIUM ===== -->
+  <div id="podium" class="hidden">
+    <h2>Podium</h2>
+    <div id="firstPlace"></div>
+    <div id="secondPlace"></div>
+    <div id="thirdPlace"></div>
+    <button onclick="resetPodium()">Reset Game</button>
+  </div>
+
+  <!-- ===== POPUP ===== -->
+  <div id="popup" class="hidden">
+    <div id="popupContent"></div>
+  </div>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="js/ui-player.js" defer></script>
+  <script src="js/gameLogic.js" defer></script>
+  <script src="js/ui-graph.js" defer></script>
+  <script src="js/ui-info.js" defer></script>
+  <script src="js/ui-trade.js" defer></script>
+  <script src="js/ui-popup.js" defer></script>
+  <script src="js/ui-podium.js" defer></script>
+  <script src="js/main.js" defer></script>
+
+</body>
+</html>
