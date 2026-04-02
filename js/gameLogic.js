@@ -64,6 +64,7 @@ function startGame() {
       s.totalSpent[i] = 0;
     });
   });
+  
 document.getElementById("setup").classList.add("hidden");
 document.getElementById("game").classList.remove("hidden");
 
@@ -75,7 +76,6 @@ resetTurn();
 setTradeMode("buy");        // creates toggle buttons
 renderStockTable();         // renders stocks immediately
 render();                   // your general UI (info bar etc.)
-  
 }
 
 function resetTurn() { actionTracker = {}; }
