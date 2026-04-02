@@ -22,3 +22,6 @@ function isColorDark(color){
   const brightness = (r*299+g*587+b*114)/1000;
   return brightness<140;
 }
+window.showInfo = showInfo;
+window.toggleInfo = toggleInfo;
+}
